@@ -1,0 +1,2 @@
+48520 correct predictions
+3633 incorrect predictions
