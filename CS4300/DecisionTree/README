@@ -1,0 +1,55 @@
+Usage:
+************************************
+Run `make` to build. 
+Run `./DecisionTree` to run program.
+Run `make clean` to clean.
+
+Algorithm Considerations:
+************************************
+Note that with boolean functions, if an incomplete truth
+table is given as the initial data set, there's no guarantee
+that the decision tree will output a correct classification given
+a novel sample. In other words, there's no guarantee that based on
+the samples given of an incomplete table, the decision tree of that
+incomplete table will resemble the tree of a complete table. 
+
+This means you might have to cherry pick samples if you're using 
+incomplete boolean function sets. 
+
+**V2 Updates**
+V1 classified by the proportion of true and false classifications at a leaf node.
+This didn't make sense since if the queried sample had already existed in the data set,
+then the tree had a likelihood of giving a classification contrary to what it's
+pre-existing classification was. Therefore, a modification was made to check for whether
+or not the queried sample already exists. If it exists and there's no impurity for that 
+sample (for example: two single-featured samples with a 1 as their feature value are 
+classified as 1 and 0), then simply return its pre-existing classification. Otherwise,
+just return false.
+
+If the sample is indeed a novel sample, only then is the proportion of true to false 
+classifications at the leaf node taken into account. If the proportion is 50/50, instead
+of flipping a coin, the sample is classified as 0 by default.
+
+Implementation Notes:
+************************************
+Expected data file format:
+
+2_3_
+1_0_1
+0_1_1
+1_1_1
+
+*REPLACE UNDERSCORES WITH SPACES! Program will not work as
+intended if not exactly formatted according to the above 
+template.
+
+- The first # of the first row: # of features of each sample
+- The second # of the first row: # of samples
+- The rest of the rows contain each sample's feature value, 
+  the last column representing its classification.
+
+Tree printing:
+- The tree is rotated a quarter turn counterclockwise. The 
+  leftmost value is the root.
+- X's represent leaf nodes. For example, if Weird.dat is inputted
+  as the data file, the only node is a leaf node. 
