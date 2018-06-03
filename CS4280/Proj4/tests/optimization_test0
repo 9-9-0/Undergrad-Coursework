@@ -1,0 +1,6 @@
+program
+start
+var var1
+let var1 = 3,
+print var1,
+end

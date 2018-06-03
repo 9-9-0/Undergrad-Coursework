@@ -1,0 +1,19 @@
+program
+var hi
+
+start
+  var follow
+  var hi
+
+  start
+    var b2a
+    var b2b
+    read b2a,
+    print b2a ,
+  end ,
+
+  if (follow < hi)
+    print follow ,
+  ,
+
+end

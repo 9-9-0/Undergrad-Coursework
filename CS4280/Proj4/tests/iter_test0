@@ -1,0 +1,13 @@
+!
+  If anything greater than 0 is entered, an infinite loop triggers. Otherwise the number is printed.
+!
+
+program
+var myvar1
+start
+  read myvar1 ,
+  iter (myvar1 > 0)
+    print myvar1 ,
+  ,
+  print myvar1 ,
+end

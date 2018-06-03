@@ -1,0 +1,54 @@
+(T-        0:        0) - Process P0 (PID 10184) generated.
+(T-        0:        0) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 4633 | Operation: 0 | Time: 0:0
+(T-        0:        0) - Page fault detected. Sending the request to the swap queue.
+(T-        0:        0) - OSS detected deadlock on device requests. Fast forwarding to 0:15000000
+(T-        0: 15000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 4 | Operation: 0 | Finished Time: 0:15000000
+(T-        0: 20000000) - OSS completing read request for Child 10184 (PID 0).
+(T-        0: 20000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 8720 | Operation: 1 | Time: 0:20000000
+(T-        0: 20000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0: 20000000) - OSS detected deadlock on device requests. Fast forwarding to 0:35000000
+(T-        0: 35000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 8 | Operation: 1 | Finished Time: 0:35000000
+(T-        0: 45000000) - OSS completing write request for Child 10184 (PID 0).
+(T-        0: 45000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 7763 | Operation: 0 | Time: 0:45000000
+(T-        0: 45000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0: 45000000) - OSS detected deadlock on device requests. Fast forwarding to 0:60000000
+(T-        0: 60000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 7 | Operation: 0 | Finished Time: 0:60000000
+(T-        0: 65000000) - OSS completing read request for Child 10184 (PID 0).
+(T-        0: 65000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 10629 | Operation: 1 | Time: 0:65000000
+(T-        0: 65000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0: 65000000) - OSS detected deadlock on device requests. Fast forwarding to 0:80000000
+(T-        0: 80000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 10 | Operation: 1 | Finished Time: 0:80000000
+(T-        0: 90000000) - OSS completing write request for Child 10184 (PID 0).
+(T-        0: 90000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 13001 | Operation: 0 | Time: 0:90000000
+(T-        0: 90000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0: 90000000) - OSS detected deadlock on device requests. Fast forwarding to 0:105000000
+(T-        0:105000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 12 | Operation: 0 | Finished Time: 0:105000000
+(T-        0:110000000) - OSS completing read request for Child 10184 (PID 0).
+(T-        0:110000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 24346 | Operation: 0 | Time: 0:110000000
+(T-        0:110000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0:110000000) - OSS detected deadlock on device requests. Fast forwarding to 0:125000000
+(T-        0:125000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 23 | Operation: 0 | Finished Time: 0:125000000
+(T-        0:130000000) - OSS completing read request for Child 10184 (PID 0).
+(T-        0:130000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 24649 | Operation: 1 | Time: 0:130000000
+(T-        0:130000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0:130000000) - OSS detected deadlock on device requests. Fast forwarding to 0:145000000
+(T-        0:145000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 24 | Operation: 1 | Finished Time: 0:145000000
+(T-        0:155000000) - OSS completing write request for Child 10184 (PID 0).
+(T-        0:155000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 19417 | Operation: 1 | Time: 0:155000000
+(T-        0:155000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0:155000000) - OSS detected deadlock on device requests. Fast forwarding to 0:170000000
+(T-        0:170000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 18 | Operation: 1 | Finished Time: 0:170000000
+(T-        0:180000000) - OSS completing write request for Child 10184 (PID 0).
+(T-        0:180000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 29627 | Operation: 1 | Time: 0:180000000
+(T-        0:180000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0:180000000) - OSS detected deadlock on device requests. Fast forwarding to 0:195000000
+(T-        0:195000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 28 | Operation: 1 | Finished Time: 0:195000000
+(T-        0:205000000) - OSS completing write request for Child 10184 (PID 0).
+(T-        0:205000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 29921 | Operation: 0 | Time: 0:205000000
+(T-        0:205000000) - Page fault detected. Sending the request to the swap queue.
+(T-        0:205000000) - OSS detected deadlock on device requests. Fast forwarding to 0:220000000
+(T-        0:220000000) - Device queue returned request: Child 0 (PID 10184) | Page Index: 29 | Operation: 0 | Finished Time: 0:220000000
+(T-        0:225000000) - OSS completing read request for Child 10184 (PID 0).
+(T-        0:225000000) - OSS received a request: Child 0 (PID 10184) | Byte Offset: 9122 | Operation: 0 | Time: 0:225000000
+(T-        0:230000000) - OSS completing read request for Child 0 (PID 10184).
+

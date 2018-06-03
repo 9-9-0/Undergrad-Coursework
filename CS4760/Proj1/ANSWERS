@@ -1,0 +1,68 @@
+1)
+
+simplechain.c
+A few notable occurrences in addition to what was already mentioned (child processes printing before their parents, which
+happens frequently with a larger n value):
+
+	- With some child processes, their parent IDs were not one created by the process chain.
+    Instead, the parent IDs corresponded to that of the init system (on the student server, this was systemD.
+    For Ubuntu, upstart).
+    This implies that those children's parent processes had already terminated before getppid() was called by the child.
+  - Which n-values > 5, occasionally the program will hang after printing the information for all processes.
+    When fprintf is commented out, the program exits correctly. Same with when stderr contents are redirected to stdout and
+    output to a file.
+
+2)
+
+[ 4987 ] -> [ 4988 ] -> [ 4989 ] -> [ 4990 ]
+
+3)
+
+The maximum pid cycled through during a run was 32767, the minimum 300, so 32467.
+The preceding 300 processes were probably pre-existing root/user processes.
+
+On running "cat /proc/sys/kernel/pid_max", the number was 32768.
+
+The fraction of init adopted processes increased greatly, for the reason mentioned in answer 1.
+
+4)
+
+simplechain2.c
+The maximum number of processes will remain the same, but the order of statements printed will be more skewed in
+addition to longer runtime due to context switching. One consideration is that if an n-value > the pid_max is entered and
+the CPU is powerful enough, forks will start failing.
+
+5)
+
+simplechain3.c
+The output of the original program is repeated k times, each set printed out after a delay of m seconds. Depending on
+the CPU's load, e.g. large n values, each set of outputs will have variance in the order that child processes print.
+
+6)
+
+simplechain4.c
+The output indicates that no processes were orphaned by init as the wait statement ensures that parent processes do not
+return until their children do. Despite statements being printed, all processes are active until the final process in the
+chain returns. n-values greater than the max number of processes would fail.
+Also, not sure why, but it seems that printed statements are now correctly ordered.
+
+7)
+
+simplechain5.c
+As expected, some of the outputs from one process are mingled with those from another. With smaller n-values, the information
+output is still intelligible (i.e. values are blocked together). However, as the n-value increases, the frequency of
+unblocked outputs increases (i.e. "i=28 i=29 process id: 592..."). It's still possible to distinguish process outputs from
+one another assuming that process IDs are strictly increasing, the child's ppid is the parent's pid, and init-adopted
+processes are limited.
+
+8)
+
+simplechain6.c
+When run, the first process prompts the user to input a string. When a string of at least size nchars is supplied, the first
+process prints the nchar characters out. However, subsequent processes behave differently. As the user types, each process prints
+out a single character, followed by nchars-1 EOF characters (casted) as its string (or '@' depending on which loop is commented
+out). If the return key is hit, as expected, the process string prints a newline followed by EOF characters. However, this ends
+up affecting the outputs of the next process.
+
+Not sure why, when child processes call stdin(), there isn't an explicit wait for the user to press return before constructing
+the string. Initially I suspected it was because '\n' was left in stdin, but that's not the case. 

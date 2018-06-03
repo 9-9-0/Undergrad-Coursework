@@ -1,0 +1,169 @@
+************************************
+Res_Id: 0 Num Instances: 1 Shareable: 1 
+************************************
+Res_Id: 1 Num Instances: 1 Shareable: 1 
+************************************
+Res_Id: 2 Num Instances: 1 Shareable: 1 
+************************************
+Res_Id: 3 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 4 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 5 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 6 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 7 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 8 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 9 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 10 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 11 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 12 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 13 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 14 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 15 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 16 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 17 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 18 Num Instances: 2 Shareable: 0 
+************************************
+Res_Id: 19 Num Instances: 2 Shareable: 0 
+************************************
+(T-     1183:600000000) - DEADLOCK detected.
+                          Deadlocked Processes: P5
+                          Attempting to resolve deadlock by killing P5 (PID 1932)
+                          FREED: 
+                             * [R1] - 1 instances 
+                             * [R3] - 2 instances 1 requests 
+                          DEADLOCK Resolved!
+(T-     1721:700000000) - DEADLOCK detected.
+                          Deadlocked Processes: P18 P13 P9 P8
+                          Attempting to resolve deadlock by killing P8 (PID 1936)
+                          FREED: 
+                             * [R15] - 1 requests 
+                             * [R16] - 1 instances 
+                             * [R18] - 1 instances 
+                          System still deadlocked...
+                          Deadlocked Processes: P18 P13 P9
+                          Attempting to resolve deadlock by killing P9 (PID 1912)
+                          FREED: 
+                             * [R5] - 1 instances 
+                             * [R8] - 1 instances 
+                             * [R11] - 1 instances 
+                             * [R13] - 1 instances 
+                             * [R15] - 1 instances 1 requests 
+                          OSS granting blocked request for R15 from PID 1927
+                          DEADLOCK Resolved!
+(T-     2031:800000000) - DEADLOCK detected.
+                          Deadlocked Processes: P18 P16 P14 P13 P12 P11 P7 P6 P4 P3 P2 P1
+                          Attempting to resolve deadlock by killing P1 (PID 1942)
+                          FREED: 
+                             * [R12] - 1 requests 
+                          System still deadlocked...
+                          Deadlocked Processes: P18 P16 P14 P13 P12 P11 P7 P6 P4 P3 P2
+                          Attempting to resolve deadlock by killing P2 (PID 1928)
+                          FREED: 
+                             * [R9] - 1 instances 1 requests 
+                          OSS granting blocked request for R9 from PID 1935
+                          DEADLOCK Resolved!
+(T-     2032:800000000) - DEADLOCK detected.
+                          Deadlocked Processes: P18 P16 P14 P13 P12 P11 P7 P6 P4 P3
+                          Attempting to resolve deadlock by killing P3 (PID 1941)
+                          FREED: 
+                             * [R12] - 1 requests 
+                          System still deadlocked...
+                          Deadlocked Processes: P18 P16 P14 P13 P12 P11 P7 P6 P4
+                          Attempting to resolve deadlock by killing P4 (PID 1935)
+                          FREED: 
+                             * [R4] - 1 instances 
+                             * [R5] - 1 instances 
+                             * [R7] - 1 instances 
+                             * [R9] - 2 instances 
+                             * [R12] - 1 requests 
+                             * [R14] - 1 instances 
+                             * [R16] - 1 instances 
+                             * [R18] - 1 instances 
+                          OSS granting blocked request for R7 from PID 1927
+                          OSS granting blocked request for R9 from PID 1933
+                          OSS granting blocked request for R14 from PID 1910
+                          DEADLOCK Resolved!
+(T-     2050:200000000) - DEADLOCK detected.
+                          Deadlocked Processes: P16
+                          Attempting to resolve deadlock by killing P16 (PID 1926)
+                          FREED: 
+                             * [R0] - 1 instances 
+                             * [R9] - 1 instances 
+                             * [R10] - 1 instances 
+                             * [R15] - 1 instances 
+                             * [R16] - 2 instances 1 requests 
+                             * [R18] - 1 instances 
+                             * [R19] - 1 instances 
+                          DEADLOCK Resolved!
+(T-     2953:100000000) - DEADLOCK detected.
+                          Deadlocked Processes: P18 P17 P14 P13 P12 P11 P10 P7 P6
+                          Attempting to resolve deadlock by killing P6 (PID 1947)
+                          FREED: 
+                             * [R0] - 1 instances 
+                             * [R18] - 1 requests 
+                          System still deadlocked...
+                          Deadlocked Processes: P18 P17 P14 P13 P12 P11 P10 P7
+                          Attempting to resolve deadlock by killing P7 (PID 1910)
+                          FREED: 
+                             * [R0] - 2 instances 
+                             * [R1] - 1 instances 
+                             * [R14] - 2 instances 
+                             * [R17] - 1 instances 1 requests 
+                          OSS granting blocked request for R14 from PID 1944
+                          OSS granting blocked request for R14 from PID 1927
+                          DEADLOCK Resolved!
+(T-     3157:800000000) - DEADLOCK detected.
+                          Deadlocked Processes: P18 P14 P13 P11 P10
+                          Attempting to resolve deadlock by killing P10 (PID 1946)
+                          FREED: 
+                             * [R3] - 1 instances 
+                             * [R5] - 1 instances 
+                             * [R9] - 1 instances 
+                             * [R11] - 1 requests 
+                             * [R13] - 1 instances 
+                          OSS granting blocked request for R13 from PID 1955
+                          System still deadlocked...
+                          Deadlocked Processes: P18 P14 P13
+                          Attempting to resolve deadlock by killing P13 (PID 1951)
+                          FREED: 
+                             * [R11] - 1 instances 1 requests 
+                             * [R13] - 1 instances 
+                          OSS granting blocked request for R11 from PID 1927
+                          System still deadlocked...
+                          Deadlocked Processes: P14
+                          Attempting to resolve deadlock by killing P14 (PID 1933)
+                          FREED: 
+                             * [R11] - 1 instances 
+                             * [R15] - 2 instances 1 requests 
+                             * [R17] - 1 instances 
+                          DEADLOCK Resolved!
+(T-     3367:900000000) - DEADLOCK detected.
+                          Deadlocked Processes: P15
+                          Attempting to resolve deadlock by killing P15 (PID 1959)
+                          FREED: 
+                             * [R5] - 2 instances 1 requests 
+                             * [R7] - 1 instances 
+                             * [R9] - 1 instances 
+                             * [R18] - 2 instances 
+                          DEADLOCK Resolved!
+(T-     3622:400000000) - DEADLOCK detected.
+                          Deadlocked Processes: P12
+                          Attempting to resolve deadlock by killing P12 (PID 1970)
+                          FREED: 
+                             * [R9] - 2 instances 
+                             * [R16] - 2 instances 1 requests 
+                          DEADLOCK Resolved!

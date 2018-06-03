@@ -1,0 +1,9 @@
+program
+var id1
+var id2
+start
+let id1 = 30 ,
+if ( id1 : 14 ) 
+  let id2 = # id1 ,
+,
+end

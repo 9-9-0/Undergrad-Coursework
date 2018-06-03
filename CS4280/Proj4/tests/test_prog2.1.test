@@ -1,0 +1,15 @@
+! Testing output of variables to .asm file !
+
+program
+var id1
+var id2
+var id3
+var id4
+
+start
+let id1 = 14 ,
+if ( id1 : 14 )
+  let id2 = # id1 ,
+,
+print id2,
+end

@@ -1,0 +1,12 @@
+! If entered number is less than 0, output 2. Else, output entered number !
+
+program
+var var1
+start
+read var1 ,
+if ((var1 - #4) > 3)
+  let var1 = 2,
+,
+
+print var1 ,
+end

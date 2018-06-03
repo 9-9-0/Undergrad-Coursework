@@ -1,0 +1,10 @@
+! let, print, and read test file !
+
+program
+var var1
+start
+read var1 ,
+print var1 + #6 ,
+let var1 = var1 + 100 ,
+print var1 ,
+end

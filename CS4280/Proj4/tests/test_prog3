@@ -1,0 +1,9 @@
+program
+var var1
+start
+read var1, 
+if ((16 / (6 + 2)) * 10 > var1)
+  let var1 = 100 ,
+,
+print var1 + 5,
+end

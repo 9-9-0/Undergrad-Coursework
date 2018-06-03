@@ -1,0 +1,24 @@
+!
+  This program is used to test the static semantics (global variable reference).
+  hi is defined twice, which will be detected by the compiler when run.
+!
+
+program
+var hi
+
+start
+  var follow
+  var hi
+
+  start
+    var b2a
+    var b2b
+    read b2a,
+    print b2a ,
+  end ,
+
+  if (follow < hi)
+    print follow ,
+  ,
+
+end

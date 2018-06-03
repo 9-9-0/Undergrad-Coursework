@@ -1,0 +1,23 @@
+{
+  "name": "bet-books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "betSysBackend.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "scrypt": "^6.0.3",
+    "web3": "^1.0.0-beta.34",
+    "truffle-contract": "^3.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

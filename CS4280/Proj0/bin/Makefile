@@ -1,0 +1,4 @@
+EXECUTABLES=P0
+
+clean :
+	rm $(EXECUTABLES)

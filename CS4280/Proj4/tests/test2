@@ -1,0 +1,11 @@
+program
+start
+  start
+    var x
+    var y
+    let x = 3 ,
+    print x ,
+    let y = 4 * x ,
+    print y ,
+  end ,
+end

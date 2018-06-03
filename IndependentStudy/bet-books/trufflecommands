@@ -1,0 +1,16 @@
+truffle compile
+truffle migrate
+truffle console --network development
+
+
+account0 = web3.eth.accounts[0]
+account1 = web3.eth.accounts[1]
+betSys.deployed().then(i => {bS = i})
+betSysOracle.deployed().then(i => {bSO = i})
+
+bS.validateGame({from: account0})
+bS.getValidity.call().then(n => console.log(n.toNumber()))
+
+
+bSO.getGameId.call(bS.address, {from: account1}).then(i => console.log(web3._extend.utils.toUtf8(i)))
+bSO.getSportId.call(bS.address, {from: account1}).then(i => console.log(web3._extend.utils.toUtf8(i)))

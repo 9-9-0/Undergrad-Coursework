@@ -1,0 +1,13 @@
+! Nested if-statement test file !
+
+program
+var var1
+start
+read var1 ,
+print #(5) ,
+if (var1 > 3)
+  if (var1 : 4)
+    print 0,
+  ,
+,
+end
